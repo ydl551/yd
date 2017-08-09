@@ -1,0 +1,649 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+    text-underline: none;
+    list-style: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    min-width: 320px;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 100%;
+    height: 100%;
+}
+
+.slide1 {
+    background: url("../images/5.jpg");
+    -webkit-background-size: 100% 100%;
+}
+
+.slide2 {
+    background: url("../images/0.jpg") no-repeat;
+    -webkit-background-size: 100% 100%;
+    position: relative;
+}
+
+.slide3 {
+    background: url("../images/3.jpg") no-repeat;
+    -webkit-background-size: 100% 100%;
+}
+
+.slide4 {
+    background: url("../images/2.jpg") no-repeat;
+    -webkit-background-size: 100% 100%;
+    position: relative;
+}
+
+.slide5 {
+    background: url("../images/1.jpg") no-repeat;
+    -webkit-background-size: 100% 100%;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+}
+
+.top-img, .bottom-img {
+    width: 100%;
+}
+
+.top-img img {
+    width: 150px;
+    height: 150px;
+    margin-left: 36%;
+}
+
+.center-1 {
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+#page1 .top-img img {
+    animation: flip 2s both;
+}
+
+#page1 .bottom-img img {
+    animation: flip 2s both;
+}
+
+#page1 .center-1 img {
+    animation: bounceInLeft 1.5s both;
+    background: white;
+    margin-top: 60px;
+}
+
+#page1 .center-2 img {
+    animation: bounceInRight 2.2s both;
+    background: white;
+    margin-top: 80px;
+}
+
+.center-2 {
+    position: absolute;
+    right: 10px;
+    top: 300px;
+}
+
+.bottom-img img {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 36%;
+}
+
+.swiper-container .music {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 9999;
+    animation: rotateIn 8s infinite both;
+    cursor: pointer;
+}
+
+@keyframes music {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#page2 .two-page {
+    width: 180px;
+    height: 180px;
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-left: 33%;
+    margin-top: 5%;
+    animation: slideInDown 2s ease-in;
+}
+
+.two-page .two-page-img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.slide2 .two-page-information {
+    color: white;
+    margin-left: 42%;
+    margin-top: 3%;
+    font-size: 25px;
+    animation: slideInLeft 2s ease-out;
+}
+
+.slide2 .line {
+    width: 3px;
+    height: 370px;
+    background: white;
+    margin-left: 52%;
+    margin-top: 5%;
+}
+
+#page2 .line .Name {
+    width: 100px;
+    height: 50px;
+    /*background: pink;*/
+    margin-left: -100px;
+    margin-top: 30px;
+    animation: slideInLeft 2s ease-in;
+}
+
+.Name .names {
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+    margin-left: 23px;
+    /*margin-top: 10px;*/
+}
+
+.Name .input-left-1 {
+    width: 80px;
+    height: 27px;
+    border: none;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    background: rgba(106, 106, 106, 0.7);
+}
+
+#page2 .date {
+    width: 100px;
+    height: 50px;
+    /*background: pink;*/
+    margin-left: -100px;
+    margin-top: 25px;
+    animation: slideInLeft 2s ease-in;
+
+}
+
+.date .input-left-2 {
+    width: 80px;
+    height: 27px;
+    border: none;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    background: rgba(106, 106, 106, 0.7);
+}
+
+.date .name-date {
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+}
+
+#page2 .school {
+    width: 100px;
+    height: 50px;
+    /*background: pink;*/
+    margin-left: -100px;
+    margin-top: 25px;
+    animation: slideInLeft 2s ease-in;
+
+}
+
+.school .l-school {
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+    margin-left: 20px;
+}
+
+.school .input-left-3 {
+    width: 80px;
+    height: 27px;
+    border: none;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    background: rgba(106, 106, 106, 0.7);
+}
+
+#page2 .degree {
+    width: 100px;
+    height: 50px;
+    /*background: pink;*/
+    margin-left: -100px;
+    margin-top: 25px;
+    animation: slideInLeft 2s ease-in;
+}
+
+.degree .l-degree {
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+    margin-left: 20px;
+}
+
+.degree .input-left-4 {
+    width: 80px;
+    height: 27px;
+    border: none;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    background: rgba(106, 106, 106, 0.7);
+}
+
+#page2 .phone {
+    width: 100px;
+    height: 50px;
+    /*background: pink;*/
+    margin-left: -100px;
+    margin-top: 25px;
+    animation: slideInLeft 2s ease-in;
+}
+
+.phone .l-phone {
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+    margin-left: 15px;
+}
+
+.phone .input-left-5 {
+    width: 110px;
+    height: 27px;
+    border: none;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin-left: -30px;
+    background: rgba(106, 106, 106, 0.7);
+}
+
+#page2 .sex {
+    width: 100px;
+    height: 50px;
+    margin-top: -350px;
+    animation: slideInRight 2s ease-in;
+}
+
+.sex .l-sex {
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+    margin-left: 40px;
+}
+
+.sex .input-right-1 {
+    width: 80px;
+    height: 27px;
+    border: none;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 20px;
+    background: rgba(106, 106, 106, 0.7);
+}
+
+#page2 .native {
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    animation: slideInRight 2s ease-in;
+}
+
+.native .l-native {
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+.native .input-right-2 {
+    width: 80px;
+    height: 27px;
+    border: none;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 20px;
+    background: rgba(106, 106, 106, 0.7);
+}
+
+#page2 .department {
+    width: 100px;
+    height: 50px;
+    margin-top: 25px;
+    animation: slideInRight 2s ease-in;
+}
+
+.department .l-department {
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+.department .input-right-3 {
+    width: 80px;
+    height: 27px;
+    border: none;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 20px;
+    background: rgba(106, 106, 106, 0.7);
+}
+
+#page2 .specialty {
+    width: 100px;
+    height: 50px;
+    margin-top: 25px;
+    animation: slideInRight 2s ease-in;
+}
+
+.specialty .l-specialty {
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+.specialty .input-right-4 {
+    width: 80px;
+    height: 27px;
+    border: none;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 20px;
+    background: rgba(106, 106, 106, 0.7);
+}
+
+#page2 .wx {
+    width: 100px;
+    height: 50px;
+    margin-top: 25px;
+    animation: slideInRight 2s ease-in;
+}
+
+.wx .l-wx {
+    font-size: 20px;
+    display: inline-block;
+    color: white;
+    margin-left: 40px;
+    margin-top: 5px;
+}
+
+.wx .input-right-5 {
+    width: 120px;
+    height: 27px;
+    border: none;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+    margin-left: 20px;
+    background: rgba(106, 106, 106, 0.7);
+}
+
+.three {
+    width: 420px;
+    height: 400px;
+    /*background: pink;*/
+    margin-top: 15%;
+}
+
+.three li {
+    font-size: 55px;
+}
+
+#page3 .three .wo {
+    margin-left: 25%;
+    font-weight: bold;
+    animation: bounceInLeft 1.5s ease-out;
+}
+
+#page3 .three .shi {
+    margin-left: 20%;
+    font-weight: bold;
+    animation: bounceInRight 3s ease-out;
+}
+
+.three .shi span {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+#page3 .three .wei {
+    font-weight: bold;
+    margin-left: 30%;
+    animation: bounceInLeft 3s ease-out;
+}
+
+.three .wei span {
+    font-size: 35px;
+}
+
+#page3 .three .hou {
+    font-weight: bold;
+    margin-left: 50%;
+    animation: bounceInRight 5.2s ease-out;
+}
+
+.three-bottom {
+    width: 430px;
+    height: 280px;
+    /*background: pink;*/
+    position: relative;
+}
+
+#page3 .three-bottom img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    animation: fadeIn 7s ease-in;
+}
+
+#page3 .three-bottom .css {
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: black;
+    position: absolute;
+    color: white;
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+    top: -20px;
+    left: 20%;
+    animation: fadeIn 6s ease-in;
+}
+
+#page3 .three-bottom .h {
+    width: 80px;
+    height: 80px;
+    border: 1px solid black;
+    position: absolute;
+    color: white;
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+    background: black;
+    border-radius: 50%;
+    left: 75%;
+    animation: fadeIn 6s ease-in;
+}
+
+#page3 .three-bottom .K {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background: black;
+    position: absolute;
+    left: 45%;
+    top: 20%;
+    animation: fadeIn 5s ease-in;
+}
+
+#page3 .three-bottom .qian {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background: black;
+    position: absolute;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    color: white;
+    font-size: 20px;
+    top: 40%;
+    left: 10%;
+    animation: fadeIn 5s ease-in;
+}
+
+#page3 .three-bottom .ji {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background: black;
+    color: white;
+    text-align: center;
+    line-height: 120px;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    animation: fadeIn 5s ease-in;
+}
+
+#page3 .three-bottom .C {
+    width: 70px;
+    height: 70px;
+    background: black;
+    border-radius: 50%;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 70px;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    animation: fadeIn 4s ease-in;
+}
+
+#page4 .four {
+    width: 115px;
+    height: 130px;
+    position: relative;
+    left: 33%;
+    top: 15%;
+    animation: bounceInDown 1.3s ease-out;
+}
+
+.four img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#page4 .china {
+    font-size: 40px;
+    color: white;
+    margin-left: 21%;
+    margin-top: 30%;
+    animation: bounceInLeft 2.3s ease-out;
+}
+
+.main, .main_ {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#page4 .main span {
+    display: inline-block;
+    font-size: 25px;
+    width: 88%;
+    color: #fff;
+    margin-top: 10%;
+    text-indent: 32px;
+    margin-left: 5%;
+    text-align: justify;
+}
+
+.summarize-buttom {
+    width: 400px;
+    height: 500px;
+    /*background: pink;*/
+    margin-left: 2%;
+}
+
+#page5 .summarize-buttom .content-1 {
+    font-size: 30px;
+    margin-top: 10%;
+    font-weight: bold;
+    animation: bounceInRight 2s ease-out;
+    margin-left: 10px;
+}
+
+#page5 .summarize-buttom .content-2 {
+    font-size: 40px;
+    display: inline-block;
+    margin-top: 15%;
+    animation: bounceInLeft 2s ease-out;
+}
+
+#page5 .wx-img {
+    margin-left: 25%;
+    margin-top: 15%;
+    animation: tada 3s ease-out;
+    border-radius: 10%;
+}
+
+.success {
+    font-size: 35px;
+    margin-top: 10%;
+    margin-left: 20%;
+}
+
+#page5 .summarize-buttom .cooperation-bottom {
+    width: 300px;
+    height: 100px;
+    margin-top: 13%;
+    margin-left: 13%;
+    animation: slideInLeft 0.8s ease-out;
+}
